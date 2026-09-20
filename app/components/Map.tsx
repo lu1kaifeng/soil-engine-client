@@ -68,7 +68,7 @@ export const Map: React.FC<MapProps> = ({
 
             // 2. Add Google Map Tile Layer (Standard Vector Tiles)
             // Google Tile URL Template: https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}
-            L.tileLayer('https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+            L.tileLayer('https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
                 attribution: '&copy; Google Maps',
                 maxZoom: 20
             }).addTo(map);

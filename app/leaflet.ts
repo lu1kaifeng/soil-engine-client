@@ -1,4 +1,6 @@
-export const loadLeaflet = (): Promise<any> => {
+import type L from 'leaflet';
+
+export const loadLeaflet = (): Promise<typeof L> => {
     return new Promise((resolve, reject) => {
         if ((window as any).L) {
             resolve((window as any).L);
